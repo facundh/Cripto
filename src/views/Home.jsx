@@ -8,7 +8,6 @@ import eth from '../assets/img/eth.png';
 import ada from '../assets/img/ada.png';
 
 import '../../src/general.css'
-import { retornarValor } from '../helper';
 import useCriptoPrice from '../hooks/useCriptoPrice'
 import { UserConsumer } from '../Context/User/UserProvider';
 
@@ -25,7 +24,7 @@ const Home = () => {
         setTimeout(async() => {
             await getPrice()
         }, 8000);
-       
+    // eslint-disable-next-line
     }, [actualizado]);
 
     return (
@@ -70,15 +69,3 @@ const Home = () => {
 }
 
 export default Home
-
-
-// ws.onmessage = (e) => {
-//     let stockOBJ = JSON.parse(e.data);
-//     console.log({e});
-//     let price = parseFloat(stockOBJ.p).toFixed(2);
-//     stockPriceElement.innerText = price;
-
-//     stockPriceElement.style.color = !lastPrice || lastPrice === price ? 'black' : price > lastPrice ? 'green' : 'red';
-
-//     lastPrice = price
-// }
