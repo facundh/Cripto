@@ -14,7 +14,7 @@ Contenido y características.
 
 3.Añadir registros, borrarlos y editarlos.
 
-4.Comprar, vender o convertir 3 distintas criptomonedas.
+4.Comprar, vender 3 distintas criptomonedas.
 
 Instalación 🔧.
 
@@ -26,10 +26,11 @@ Para poder iniciar el presente proyecto debe ejectuar : npm / yarn start.
 
 Ejecutando las pruebas ⚙
 
-Pruebas unitarias: npm run test
+Pruebas unitarias: npm run test 
 
 Construido con 🛠️.
-
+Las teconologías utilizadas fueron:  
+     
 HTML, CSS, Javascript, React JS y Firebase
 
 Autor ✒️.
