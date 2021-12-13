@@ -1,5 +1,7 @@
-Cripto
-Aplicación para comprar, vender y convertir criptomonedas.
+Cripto Web
+=
+
+Aplicación para comprar, vender criptomonedas.
 --
 
 La estructura del proyecto está basada en MVC (modelo-vista-controlador) y en Api Restfull.
