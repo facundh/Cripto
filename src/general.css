@@ -1,0 +1,243 @@
+* {
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  min-height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 100;
+}
+
+.fullHeight {
+  min-height: 100vh;
+}
+
+.loginContainer {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://www.santander.com/es/stories/guia-para-saber-que-son-las-criptomonedas/_jcr_content/root/story/bottomParsys/resource_composer/resource-composer__composition-three-2.coreimg.jpeg/1612548160888/im-storie-guia-para-saber-que-son-las-criptomonedas-3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+  height: 30%;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.formContainer h1 {
+  color: black;
+  font-weight: bolder;
+}
+
+.cripto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.user_profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+  
+}
+
+.avatar{
+  width: 80px;
+  height: 80px;
+  
+}
+
+.btn_logout{
+  margin-right: 20px;
+  background-color: #234567;
+  padding: 10px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn_logout:hover{
+  background: #53a7ea;
+}
+
+
+
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 90vh;
+}
+
+.user_side{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  height: 20vh;
+}
+
+.user_table{
+  border-bottom: 1px solid black;
+  margin: 10px;
+  width: 500px;
+  height: 250px;
+  text-align: center;
+}
+
+.user_table_item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px
+}
+
+.style_data{
+  text-decoration: none;
+  color: black;
+  border: 1px solid lightgray;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: lightgrey;
+  transition:all 0.2s ease-in-out ;
+}
+
+.style_data:hover{
+  transition:all 0.2s ease-in-out ;
+  color: white;
+  background-color: #e0792a;
+}
+
+
+@media screen and (max-width: 768px) {
+  .respmenu a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    border-bottom: 2px solid #456789;
+    max-width: 200px;
+    background: #234567;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black;
+  }
+
+  
+  .formWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .marketWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .table thead tbody tr th td {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+  }
+}
+
+@media  screen and (max-width: 800px) { 
+  .user_profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 500px;
+    
+  }
+
+  .home_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+  }
+
+  .user_side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    height: 20vh;
+    width: 100%;
+  }
+
+  .wrapper_movimientos{
+  font-size: 5px;
+  
+  }
+  .table table-light text-center{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    
+  }
+
+  .text-center{
+   
+    width: 100%;
+    font-size: 15px;
+  }
+  td{
+    width: 100%;
+    font-size: 15px;
+
+  }
+  
+}
