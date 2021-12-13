@@ -28,7 +28,9 @@ Ejecutando las pruebas ⚙
 
 Pruebas unitarias: npm run test 
 
-Construido con 🛠️.
+Construido con 🛠️.  
+
+
 Las teconologías utilizadas fueron:  
      
 HTML, CSS, Javascript, React JS y Firebase
