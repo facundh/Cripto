@@ -1,68 +1,156 @@
 import styled from "styled-components";
-import { NavLink as Link } from "react-router-dom";
+import {  Link } from 'react-router-dom'
 
+export const Container = styled.div`
+  width: 100%;
+  height: 70px;
+  background-color: #23394d; ;
+`;
 
-export const Nav = styled.nav` 
-    background: #000000d1;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    z-index: 10;
+export const Wrapper = styled.div`
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+`;
 
-`
+export const LogoContainer = styled.div`
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  p {
+    &:nth-child(2) {
+      color: #fff;
+    }
+    &:nth-child(3) {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #e07924;
+    }
+  }
+  svg {
+    fill: #e07924;
+    margin-right: 0.5rem;
+  }
+`;
 
-export const NavLink = styled(Link)`
-    color:white;
-    display: flex;
+export const Menu = styled.ul`
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  @media screen and (max-width: 960px) {
+    background-color: #23394d;
+    position: absolute;
+    top: 70px;
+    left: ${({ open }) => (open ? "0" : "-100%")}; //Import
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    text-decoration: none;
-    padding: 20px;
+    transition: 0.5s all ease;
+  }
+`;
+
+export const MenuItem = styled.div`
+  height: 100%;
+  @media screen and (max-width: 960px) {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: ce;
+    align-items: center;
+  }
+`;
+
+export const MenuItemLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0.5rem 2.5rem;
+  color: #64b2ff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: 0.5s all ease;
+  &:hover {
+    color: #fff;
+    background-color: #e0792a;
+    transition: 0.5s all ease;
+    div {
+      svg {
+        fill: #23394d;
+      }
+    }
+  }
+  div {
+    width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      display: none;
+      fill: #e0792a;
+      margin-right: 0.5rem;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    width: 100%;
+    div {
+      width: 30%;
+      justify-content: left;
+      svg {
+        display: flex;
+      }
+    }
+  }
+  @media screen and (max-width: 880px) {
+    div {
+      width: 40%;
+      justify-content: left;
+      svg {
+        display: flex;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    div {
+      width: 60%;
+      justify-content: left;
+      svg {
+        display: flex;
+      }
+    }
+  }
+  @media screen and (max-width: 260px) {
+    div {
+      width: 100%;
+      justify-content: left;
+      svg {
+        display: flex;
+      }
+    }
+  }
+`;
+
+export const MobileIcon = styled.div`
+  display: none;
+  @media screen and (max-width: 960px) {
+    display: flex;
+    align-items: center;
     cursor: pointer;
-
-
-    &.active{
-        border-bottom:red;
-        
+    svg {
+      fill: #e07924;
+      margin-right: 0.5rem;
     }
-
-
-`
-
-
-export const NavMenu = styled.div`
-    display: flex;
-    align-items: center;
-    margin-right: -24px;
-
-    @media screen and (max-width: 768px){
-        display: none;
-    }
-`
-
-export const NavBtn = styled.nav`
-    display: flex;
-    align-items: center;
-    margin-right: 24px;
-
-    @media screen and (max-width: 768px){
-        display: none;
-    }
-`
-
-export const NavBtnLink = styled(Link)` 
-border-radius:4px;
-padding: 10px 22px;
-color: #fff;
-border: none;
-outline: none;
-cursor: pointer;
-transition:all 0.2s ease-in-out ;
-text-decoration: none;
-
-&:hover{
-    transition:all 0.2s ease-in-out ;
-
-}
-`
+  }
+`;

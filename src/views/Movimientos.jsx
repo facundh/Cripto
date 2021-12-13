@@ -29,9 +29,6 @@ const Movimientos = () => {
             <th scope="col" className="text-center">
              Quantity
             </th>
-            <th scope="col" className="text-center">
-              Asset type
-            </th>
           </tr>
         </thead>
         <tbody>

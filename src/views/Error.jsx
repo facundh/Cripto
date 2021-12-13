@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavBtnLink } from '../components/Navbar/NavBarElements'
+import { MenuItemLink } from '../components/Navbar/NavBarElements'
 
 
 import '../../src/general.css'
@@ -16,7 +16,7 @@ const Error = () => {
 
         }}>
             <h1>Error</h1>
-            <NavBtnLink to='/home'>Volver al Home</NavBtnLink> 
+            <MenuItemLink to='/home'>Volver al Home</MenuItemLink> 
         </div>
 
             </>
