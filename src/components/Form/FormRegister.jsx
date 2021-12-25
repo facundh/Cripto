@@ -111,7 +111,7 @@ const FormRegister = () => {
         Submit
       </button>
       <p>
-        Are you registered <Link to="/">Click here! </Link>
+        Are you registered <Link to="/login">Click here! </Link>
       </p>
     </form>
   );

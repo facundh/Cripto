@@ -9,7 +9,7 @@ import {
   updatePassword,
   updateEmail,
 } from "firebase/auth";
-import { collection,addDoc} from "firebase/firestore";
+import { collection, addDoc } from "firebase/firestore";
 import { GlobalConsumer } from "../User/GlobalProvider";
 import { checkfilledIsEmpty } from "../../helper";
 
